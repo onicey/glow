@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Nomi Health</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="logo nav__logo">
+          <a href="#">GLOW</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">ページ</a></li>
+        <li><a href="#project">BMI</a></li>
+        <li><a href="#community">情報</a></li>
+        <li><a href="#resources">About us</a></li>
+      </ul>
+    </nav>
+    <header class="header" id="home">
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h1>BMIチェックによって自分の<span>  
+          <br>肥満度と標準体重
+        </span>確認しよう</h1></br>
+          <p class="section__description">
+            今から始まる健康的な生活へ
+          </p>
+          <div class="header__btns">
+            <a href="asuultuud.html" >
+              <button class="btn">体のBMIを知りましょう</button>              
+            </a>
+          </div>
+        </div>
+        <div class="header__image">
+          <img src="assets/header1.png" alt="header" />
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container commitment__container" id="project">
+    <div class="commitment__image">
+      <img src="assets/commitment1.png" alt="commitment" />
+    </div>
+    <div class="commitment__content">
+      <h2 class="section__header"><span>BMI</span>って何？</h2>
+      <p class="section__description">
+        BMI（Body Mass Index）はボディマス指数と呼ばれ、体重と身長から算出される肥満度を表す体格指数です。
+      </p>
+      <ul class="commitment__list">
+        <li id="weight-goal">
+          <div class="gradient__box">
+            <span><i class="ri-shield-check-fill"></i></span>
+            <p>体重管理目標を監視</p>
+          </div>
+          <div class="details" id="weight-goal-details">
+            <p>BMI は体重管理プログラムのベンチマークとしてよく使用され、個人や医療提供者が進捗状況を追跡し、目標を調整するのに役立ちます。計算が簡単で、時間の経過に伴う変化を監視するための出発点となります。</p>
+          </div>
+        </li>
+        <li id="non-invasive">
+          <div class="gradient__box">
+            <span><i class="ri-survey-fill"></i></span>
+            <p>非侵襲的で計算が簡単</p>
+          </div>
+          <div class="details" id="non-invasive-details">
+            <p>BMI では身長と体重の測定のみが必要なため、自宅や医療現場で使用できる便利で非侵襲的で費用対効果の高いスクリーニング ツールです。</p>
+          </div>
+        </li>
+        <li id="early-detection">
+          <div class="gradient__box">
+            <span><i class="ri-folder-keyhole-fill"></i></span>
+            <p>健康リスクの早期検出に役立ちます</p>
+          </div>
+          <div class="details" id="early-detection-details">
+            <p>BMI 値が高いか低いかは、健康上の問題の指標となる場合があります。BMI が高いと、心臓病、2 型糖尿病、高血圧、特定の癌のリスクが増加することが多く、BMI が非常に低い場合は、栄養失調やその他の根本的な健康上の問題を示している可能性があります。</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+    <section class="section__container build__container" id="community">
+      <div class="build__image">
+        <img src="assets/build1.png" alt="build" />
+      </div>
+      <div class="build__content">
+        <h2 class="section__header">
+          もっと <span>美しくなる</span> ヒント
+        </h2>
+      
+        <ul class="build__grid">
+          <li>
+              <div class="build__card gradient__box" onclick="openModal('assets/food1.jpg')">
+                  <img src="assets/food1.jpg" alt="健康情報 1" />
+                  <h4>食事バランス</h4>
+              </div>
+          </li>
+          <li>
+              <div class="build__card gradient__box" onclick="openModal('assets/alhalt.jpg')">
+                  <img src="assets/alhalt.jpg" alt="健康情報 2" />
+                  <h4>1日1万歩</h4>
+              </div>
+          </li>
+          <li>
+              <div class="build__card gradient__box" onclick="openModal('assets/mizu.jpg')">
+                  <img src="assets/mizu.jpg" alt="健康情報 3" />
+                  <h4>１日2L水</h4>
+              </div>
+          </li>
+      </ul>
+  
+      <!-- モーダル -->
+      <div id="myModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <img id="modalImage" src="" alt="画像">
+          </div>
+      </div>
+
+          </li>
+        </ul>
+        
+      </div>
+    </section>
+
+    <section class="section__container client__container" id="resources">
+      <div class="client__image gradient__box">
+        <img src="assets/client1.png" alt="client" />
+      </div>
+      <div class="client__content">
+        
+
+
+
+
+        <h2 class="section__header">
+          健康的な <span>体重</span> とは？
+      </h2>
+      <p class="section__description">
+          健康的な体重とは、体重に関連する病気や健康問題のリスクが低いことと関連付けられる数値です。
+      </p>
+      
+      <!-- 長文のコンテンツ -->
+      <div class="content" id="longContent">
+          <p>
+            健康的な体重のガイドラインは人口レベルで策定されていますが、各人の健康的な体重の範囲は異なり、年齢、性別、遺伝、体格、既存の病歴、生活習慣、若い成人としての体重などの要因によって異なります。体重は、健康を決定する多くの要因の 1 つにすぎません。身長に対して標準化された体重を測定するボディマス指数 (BMI) は、健康リスクの指標としてよく使用されます。体脂肪や体組成を直接測定するものではありませんが、研究では、BMI は体脂肪を直接測定する他の方法と密接に相関していることが示されています。MET Life 身長体重表はどの程度役立ちますか？体重増加の原因は、特定の薬剤 (コルチコステロイド、抗うつ薬、ベータ遮断薬、抗精神病薬、インスリン)、妊娠、慢性的なストレス、慢性的な睡眠不足、過剰なカロリー摂取、十分な運動不足など、数多くあります。  できる限り安定した体重を維持し、健康リスクと強く関連する過度の体重増加をコントロールすることが有益です。 維持して、増やさない健康的な体重を維持することで、心臓病、脳卒中、糖尿病、高血圧、および多くの異なる癌のリスクを軽減できます。  体重、ウエストサイズ、および20代半ば以降に増加した体重の量は、健康に影響を与える可能性があります。これらの要因は、次の病気や症状を発症する可能性に強く影響する可能性があります。 心臓発作や脳卒中を含む心血管疾患 糖尿病 癌 関節炎 胆石 喘息 白内障 不妊症 いびき 睡眠時無呼吸症 ほとんどの成人は、平均して毎年1～2ポンド体重が増えます。 加齢とともに体重が増えると、1つまたは複数の慢性疾患を発症する可能性が高くなります。看護師健康調査と医療専門家追跡調査では、20歳以降に体重が11～22ポンド増加した中年女性と男性は、5ポンド以下しか増加しなかった人に比べて、心臓病、高血圧、2型糖尿病、胆石を発症する可能性が最大で3倍高かった。22ポンド以上体重が増えた人は、これらの病気を発症するリスクがさらに高かった。看護師健康調査データの別の分析では、成人の体重増加は閉経後でも閉経後乳がんのリスクを高める可能性があることが判明した 心強いことに、ホルモン補充療法を使用したことのない女性の場合、閉経後に体重を減らし、それを維持することで、閉経後乳がんのリスクが半分に減った。
+          </p>
+      </div>
+      
+      <!-- もっと見るボタン -->
+      <p><span class="more-button" id="moreButton">もっと見る</span></p>
+      
+      <script>
+          // 最初にコンテンツが折りたたまれている状態にする
+          document.getElementById('longContent').style.maxHeight = '150px';
+          
+          // もっと見るボタンのクリックイベント
+          document.getElementById('moreButton').addEventListener('click', function() {
+              var content = document.getElementById('longContent');
+              var button = document.getElementById('moreButton');
+      
+              // コンテンツの展開/折りたたみを切り替え
+              if (content.style.maxHeight === 'none') {
+                  content.style.maxHeight = '150px'; // 150pxに戻す（折りたたみ）
+                  button.textContent = 'もっと見る';  // ボタンのテキストを変更
+              } else {
+                  content.style.maxHeight = 'none';   // コンテンツを展開
+                  button.textContent = '閉じる';      // ボタンのテキストを変更
+              }
+          });
+      </script>
+
+
+
+
+
+</div>
+<div class="swiper-slide">
+<div class="client__card gradient__box">
+
+<h4>アルタンバト　マラルエルデネ</h4>
+<h5>2023JS012</h5>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="client__card gradient__box">
+
+<h4>ムンフトラグ　ノミンゲレル
+</h4>
+<h5>2023JS040</h5>
+</div>
+</div>
+</div>
+<!-- If we need pagination -->
+<div class="swiper-pagination"></div>
+</div>
+</div>
+
+    </section>
+
+    
+
+    <section class="section__container getstarted__container">
+      <h2 class="section__header">ようこそウェブサイトへ</h2>
+      <p class="section__description">
+        体の情報だけ入力して健康の状態を知りましょう。
+      </p>
+
+      <a href="asuultuud.html" >
+        <button class="btn">始めましょう</button>             
+      </a>
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>病院検索リンク</title>
+        <style>
+            /* ボタンのデザイン */
+            .start-button {
+                background-color: #050505; /* 緑色 */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 8px;
+                transition: background-color 0.3s ease;
+            }
+    
+            .start-button:hover {
+                background-color: #0c0e0c; /* ホバー時の色 */
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 「始めましょう」ボタンと同じデザインのボタン -->
+        <button class="start-button" onclick="window.location.href='https://www.google.com/maps/search/%E8%82%9D%E8%87%93%E6%A4%9C%E6%9F%BB%E3%81%8C%E3%81%8D%E3%82%8B%E7%97%85%E9%99%A2/@33.729277,137.80567,6z?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D'">
+            肝臓検査ができる病院を探す
+        </button>
+    </body>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="logo footer__logo">
+          <a href="#">GLOW</a>
+        </div>
+        <ul class="footer__links">
+          <li><a href="#home">ページ</a></li>
+        <li><a href="#project">BMI</a></li>
+        <li><a href="#community">情報</a></li>
+        <li><a href="#resources">About us</a></li>
+        </ul>
+      </div>
+      <div class="footer__bar">
+        ありがとうございました
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

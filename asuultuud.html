@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMIと心血管疾患リスク</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>  
+    <div class="container">
+        <h1 class="heading">BMIと心血管疾患リスク計算</h1>
+    
+        <form id="health-form">
+            <label for="age">年齢:</label>
+            <input type="number" id="age" name="age" min="1" required class="input"><br>
+
+            <label>性別:</label><br>
+            <input type="radio" id="male" name="gender" value="男性" required class="input">
+            <label for="male">男性</label><br>
+            <input type="radio" id="female" name="gender" value="女性" class="input">
+            <label for="female">女性</label><br>
+
+            <br>
+
+            <label for="weight">体重 (kg):</label>
+            <input type="number" id="weight" name="weight" min="1" required class="input"><br>
+
+            <label for="height">身長 (cm):</label>
+            <input type="number" id="height" name="height" min="50" required class="input"><br>
+
+            <label>タバコを吸いますか？</label><br>
+            <input type="radio" id="smoking-yes" name="smoking" value="はい" required class="input">
+            <label for="smoking-yes">吸う</label><br>
+            <input type="radio" id="smoking-no" name="smoking" value="いいえ" class="input">
+            <label for="smoking-no">吸わない</label><br>
+
+            <button type="submit" class="btn">結果を見る</button>
+        </form>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <img id="result-image" class="result-image" src="" alt="結果画像" style="display: none;">
+            <div id="result" class="info-text"></div>
+            <div id="cardio-risk" class="info-text"></div>
+            <button id="print-results">計算結果を印刷する</button>
+            <button id="close-popup" class="btn">閉じる</button>
+            
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+
+</body>
+</html>
+
