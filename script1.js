@@ -95,13 +95,13 @@ document.getElementById('health-form').addEventListener('submit', function(event
     // 画像の表示処理
     let imageSrc = "";
     if (bmi >= 30) {
-        imageSrc = "images/obese.png";  // 肥満の画像
+        imageSrc = "obese.png";  // 肥満の画像
     } else if (bmi >= 25) {
-        imageSrc = "images/overweight.png";  // 過体重の画像
+        imageSrc = "overweight.png";  // 過体重の画像
     } else if (cardioRisk > 0) {
-        imageSrc = "images/smoke.png";  // 喫煙リスクの画像
+        imageSrc = "smoke.png";  // 喫煙リスクの画像
     } else {
-        imageSrc = "images/healthy.png";  // 健康的な生活の画像
+        imageSrc = "healthy.png";  // 健康的な生活の画像
     }
 
     // 画像を表示
